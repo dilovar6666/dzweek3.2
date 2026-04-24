@@ -57,6 +57,231 @@
       </div>
    </section>
 
+
+   <section class="min-h-screen bg-[#212121] text-white p-10 font-inter">
+
+      <div class="max-w-[1300px] mx-auto mb-12">
+         <h1 class="text-[60px] font-bold mb-8">Заголовок H1 <span class="font-normal ml-10">Font Inter 60px</span></h1>
+
+         <nav class="text-sm">
+            <p class="text-gray-100 mb-1">Хлебные крошки</p>
+            <div class="flex gap-2">
+               <span class="text-[#AEAEAE]">Главная</span> —
+               <span class="text-[#AEAEAE]">Главная</span> —
+               <span>Главная</span>
+            </div>
+         </nav>
+      </div>
+
+      <div class="max-w-[1300px] mx-auto flex flex-wrap gap-8 justify-center lg:justify-start">
+
+         <div class="bg-[#1E1E1E] p-10 rounded-[30px] w-full max-w-[450px] shadow-xl shadow-[#00000099]">
+            <h2 class="text-[#a67c52] text-3xl font-bold mb-8 text-center uppercase tracking-wide">Заполните поля</h2>
+
+            <form class="flex flex-col gap-4">
+               <input type="text" placeholder="Имя"
+                  class="bg-transparent border border-[white] rounded-full px-6 py-3 focus:outline-none">
+               <input type="tel" placeholder="Телефон"
+                  class="bg-transparent border border-[white] rounded-full px-6 py-3 focus:outline-none">
+               <input type="email" placeholder="E-mail"
+                  class="bg-transparent border border-[white] rounded-full px-6 py-3 focus:outline-none">
+
+               <label class="flex items-center gap-2 text-[10px] text-gray-400 mt-2">
+                  <input type="checkbox">
+                  Соглашаюсь на обработку персональных данных
+               </label>
+
+               <button type="button"
+                  class="bg-[#a67c52] hover:bg-[#8e6a45] text-white font-bold py-4 rounded-full mt-4 transition">
+                  Отправить
+               </button>
+            </form>
+         </div>
+
+         <div class="bg-[#1E1E1E] p-10 rounded-[30px] w-full max-w-[450px] shadow-xl shadow-[#00000099] flex flex-col">
+            <h2 class="text-[#a67c52] text-3xl font-bold mb-8 text-center uppercase tracking-wide">Авторизации</h2>
+
+            <form class="flex flex-col gap-4 flex-grow">
+               <input type="email" placeholder="E-mail"
+                  class="bg-transparent border border-[white] rounded-full px-6 py-3 focus:outline-none transition">
+
+               <div class="relative">
+                  <input type="password" placeholder="Пароль"
+                     class="w-full bg-transparent border border-[white] rounded-full px-6 py-3  transition">
+                  <span class="absolute right-5 top-4 border-[white] text-xs"><img
+                        src="./forimg/ph_eye-closed-light.png" alt=""></span>
+               </div>
+
+               <p class="text-[#a67c52] text-center text-sm underline mt-2 hover:text-[#8e6a45]">Восстановить
+                  пароль</p>
+
+               <button type="button"
+                  class="bg-[#a67c52] hover:bg-[#8e6a45] text-white font-bold py-4 rounded-full mt-auto transition">
+                  Отправить
+               </button>
+            </form>
+         </div>
+
+      </div>
+
+
+      <section class="bg-[#212121] text-white p-10 font-inter">
+         <div class="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <div class="space-y-10">
+               <h3 class="text-2xl font-medium mb-6">элементы чекбоксов, радио кнопок, выбор из списка</h3>
+
+               <div class="space-y-4">
+                  <label class="flex items-center gap-3 group">
+                     <input type="checkbox"
+                        class="w-5 h-5 bg-transparent border border-gray-500 rounded sm:focus:ring-0  appearance-none  relative checked:after:content-['✓'] checked:after:absolute checked:after:text-white checked:after:text-[12px] checked:after:left-1">
+                     <span class="text-sm text-gray-300">Соглашаюсь на обработку персональных данных</span>
+                  </label>
+                  <label class="flex items-center gap-3">
+                     <input type="checkbox" checked
+                        class="w-5 h-5 bg-transparent border border-gray-500 rounded appearance-none  relative">
+                     <span class="text-sm text-gray-300">Соглашаюсь на обработку персональных данных</span>
+                  </label>
+               </div>
+               <div class="place-self-center relative top-[50px] lg:right-[90px]">
+                  <p>Активная <br>
+                     Радио-кнопка</p>
+                  <p>———→</p>
+               </div>
+               <div class="flex gap-12">
+                  <div class="space-y-4">
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 1</span>
+                     </label>
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 2</span>
+                     </label>
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 3</span>
+                     </label>
+                  </div>
+                  <div class="space-y-4">
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border-5 border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 1</span>
+                     </label>
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 2</span>
+                     </label>
+                     <label class="flex items-center gap-3">
+                        <input type="radio" name="radio-group"
+                           class="w-6 h-6 bg-transparent border border-[#a67c52] rounded-full appearance-none checked:bg-[#a67c52] checked:border-4 checked:border-[#121926] outline outline-1 outline-[#a67c52]">
+                        <span class="text-sm">Радио-кнопка 3</span>
+                     </label>
+                  </div>
+               </div>
+               <div
+                  class="flex lg:w-[220%] justify-center text-center lg:justify-baseline lg:text-start flex-wrap lg:flex-nowrap ">
+                  <div class="space-y-4 w-[50%]">
+                     <h3 class="text-2xl font-medium">выбор из списка</h3>
+                     <div class="relative max-w-sm">
+                        <select
+                           class="w-full bg-transparent border border-gray-500 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:border-[#a67c52] cursor-pointer">
+                           <option class="bg-[#1c2533]">Lorem ipsum</option>
+                           <option class="bg-[#1c2533]">Dolor sit amet</option>
+                        </select>
+                        <div class="absolute right-4 top-4 pointer-events-none">
+                           <span class="text-xs">▼</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="bg-[#212121] p-0 min-h-[400px] mt-[30px] lg:mt-[0]">
+                     <div class="relative w-[280px]">
+                        <div
+                           class="flex items-center justify-between px-4 py-3 bg-[#212121] border border-white rounded-lg">
+                           <span class="text-white text-lg">Lorem ipsun</span>
+                        </div>
+                        <div
+                           class="absolute w-full mt-2 bg-[#212121] border border-white rounded-lg overflow-hidden z-10">
+                           <ul class="flex flex-col">
+                              <li class="px-4 py-3 text-white text-base">Lorem
+                                 ipsun, dolor smit</li>
+                              <li class="px-4 py-3 text-white text-base  ">
+                                 Lorem ipsun, dolor smit</li>
+                              <li class="px-4 py-3 text-white text-base  ">
+                                 Lorem ipsun, dolor smit</li>
+                              <li class="px-4 py-3 text-white text-base ">
+                                 Lorem ipsun, dolor smit</li>
+                              <li class="px-4 py-3 text-white text-base  ">
+                                 Lorem ipsun, dolor smit</li>
+                              <li class="px-4 py-3 text-white text-base  ">
+                                 Lorem ipsun, dolor smit</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="flex flex-col gap-4 justify-start pt-14">
+               <button
+                  class="w-full max-w-[350px] bg-[#a67c52] hover:bg-[#8e6a45] text-white py-4 rounded-full text-lg transition shadow-lg">
+                  Отправить
+               </button>
+               <button
+                  class="w-full max-w-[350px] bg-[#4a3420] hover:bg-[#3d2a1a] text-white py-4 rounded-full text-lg transition">
+                  Отмена
+               </button>
+            </div>
+         </div>
+      </section>
+
+
+
+      <section class="bg-[#212121] text-white p-10 font-inter">
+         <div class="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+
+            <div>
+               <h3 class="text-2xl font-medium mb-6">неупорядоченный</h3>
+               <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                  <li>Lorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smitLorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smitLorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smit</li>
+                  <li>Lorem ipsun, dolor smit</li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="text-2xl font-medium mb-6">упорядоченный</h3>
+               <ol class="list-decimal pl-5 space-y-6 text-gray-300">
+                  <li>
+                     <span class="text-white">Lorem ipsun, dolor smit</span>
+                     <ul class="list-disc pl-8 mt-2 space-y-2">
+                        <li>Lorem ipsun, dolor smit</li>
+                        <li>Lorem ipsun, dolor smit</li>
+                        <li>Lorem ipsun, dolor smit</li>
+                     </ul>
+                  </li>
+
+                  <li>
+                     <span class="text-white">Lorem ipsun, dolor smit</span>
+                     <ul class="list-disc pl-8 mt-2 space-y-2">
+                        <li>Lorem ipsun, dolor smit</li>
+                        <li>Lorem ipsun, dolor smit</li>
+                     </ul>
+                  </li>
+               </ol>
+            </div>
+
+         </div>
+      </section>
+   </section>
 </body>
 
 </html>
